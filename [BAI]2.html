@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 2</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<!-- <table></table> -->
+<table width="500px" height="200px" border="1px" bordercolor="blue" align="center">
+	<tr>
+		<td>ID</td>
+		<td>Name</td>
+		<td>Email</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>Duy</td>
+		<td rowspan="2">leezy.pz66@gmail.com</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Dương</td>
+		<!-- <td>leezy.pz66@gmail.com</td> -->
+	</tr>
+</table>
+<br>
+<table width="200px" height="200px" border="1px" bordercolor="blue" align="center">
+	<tr>
+		<td colspan="2"><CENTER>1</CENTER></td>
+		<td colspan="2"><center>2</center></td>
+		<td rowspan="4"><center>0</center></td>
+	</tr>
+	<tr align="center">
+		<td>3</td>
+		<td colspan="2"><center>4</center></td>
+		<td>5</td>
+	</tr>
+	<tr>
+		<td colspan="2"><center>6</center></td>
+		<td colspan="2"><center>7</center></td>
+	</tr>
+	<tr align="center">
+		<td>8</td>
+		<td colspan="2">9</td>
+		<td>10</td>
+	</tr>
+	<tr>
+		<td colspan="4"><center>0</center></td>
+	</tr>
+<br>
+</table>
+<!-- text , email, pass, number, date,color, url, file, sreach, radio, checkbox , hidden , range, button, reset-->
+<!-- <form></form> -->
+<form name="" action="" method="post">
+	<input type="text" name="gender" placeholder=" Enter gender" value="Male" required="gender" disabled="gender" > Male
+	<input type="text" name="gender" placeholder=" Enter gender"> Female
+<!-- <textarea></textarea> -->
+	<textarea name="" rows="5" cols="10" placeholder="Enter"></textarea>
+<!-- <button></button> -->
+	<button type="submit">Login</button>
+<!-- <select></select> -->
+<select name="City">
+	<option value="1">Hà Nội</option>
+	<option value="2" selected> Hồ Chí Minh</option>
+	<option value="3">Đà Nẵng</option>
+</select>
+<input type="reset" name="reset">
+</form>
+<br>
+<form>
+<table width="500px" height="200px" border="1px" align="center">
+	<tr align="center">
+		<td colspan="2" bgcolor="Orange">ZENT GROUP</td>
+	</tr>
+	<tr>
+		<td>Họ và tên</td>
+		<td><input type="text" name="name"></td>
+	</tr>
+	<tr>
+		<td>Email</td>
+		<td><input type="text" name="email"></td>
+	</tr>
+	<tr>
+		<td>Số Điện Thoại</td>
+		<td><input type="munber" name="SĐT"></td>
+	</tr>
+	<tr>
+		<td>Quê Quán</td>
+		<td>
+			<select name="City">
+				<option value="1">Hà Nội</option>
+				<option value="2">Hồ Chỉ Minh</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Giới Tính</td>
+		<td>
+			<input type="radio" name="gender"> Male
+			<input type="radio" name="gender"> Femail
+		</td>
+	</tr>
+	<tr>
+		<td>Kỹ Năng</td>
+		<td>
+			<input type="checkbox" name=""> HTML
+			<input type="checkbox" name=""> CSS
+			<input type="checkbox" name=""> JS
+			<input type="checkbox" name=""> BOOSTRAP
+		</td>
+	</tr>
+	<tr>
+		<td>Ngày Sinh</td>
+		<td><input type="date" name="date"></td>
+	</tr>
+	<tr>
+		<td>Miêu Tả</td>
+		<td><textarea rows="5" cols="50" placeholder="Enter"></textarea></td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center" bgcolor="Orange"><button><a href="https://linkneverdie.com/Login">Submit</a></button><button>reset</button></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

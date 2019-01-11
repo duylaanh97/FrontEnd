@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			/* margin: 40px 50px 40px 40px; */
+			/* margin-right: 40px ;
+			margin-bottom: 100px;
+			margin-top: 40px;
+			margin-left: 40px; */
+			/* padding: 190px;
+				border: 10px solid green;	 */	
+	/* 	}
+	.name:after {
+		content:"tu du";
+		color: red;
+	}
+	.name:before {
+		content:"nham nhi";
+		color: green;
+	}
+	.name {
+		position: fixed;
+		background: green;
+		width: 500px;
+		height: 500px;
+		border-radius: 50%;
+		left: 100px;
+		top: 200px;
+		z-index: 7;
+	}
+	.child {
+		background: red;
+		width: 100px;
+		height: 100px;
+		left: 400px;
+		bottom: 100px;
+		border-radius: 50%;
+		position:absolute; 
+		z-index: 6; */
+		}
+		#menu {
+			padding-left: 0;
+			height: 42px;
+			background: green
+		}
+		.item {
+			float: left;
+			list-style: none;
+			padding-left: 20px;
+			padding-right: 20px;
+			line-height: 42px;
+			position: relative
+		}
+		.item>a {
+			color: #fff;
+			text-decoration: none
+		}
+		.item:hover {
+			background: #00f
+		}
+		.item:hover>a {
+			color: red
+		}
+		.submenu {
+			display: none;
+			padding-left: none;
+			width: 160px;
+			left: 0;
+			background: green;
+			position: absolute
+		}
+		.item:hover .submenu {
+			display: block
+		}
+		.item:hover.submenu.item {
+			float: none;
+			padding-left: 10px;
+			padding-right: 0
+		}
+	</style>
+</head>
+<body style="height: 1000px">
+	<ul id="menu">
+		<li class="item">
+			<a href="#">Home</a>
+		</li>
+		<li class="item">
+			<a href="#">Courses <i class="fas fa-angle-down"></i></a>
+			<ul class="submenu">
+				<li class="item">
+					<a href="#">Java</a>
+				</li>
+				<li class="item">
+					<a href="#">PHP</a>
+				</li>
+				<li class="item">
+					<a href="#">Front end</a>
+				</li>
+			</ul>
+		</li>
+		<li class="item">
+			<a href="#">About</a>
+		</li>
+	</ul>
+</body>
+</html>

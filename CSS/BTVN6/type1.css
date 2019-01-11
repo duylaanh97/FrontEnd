@@ -1,0 +1,120 @@
+		.item{
+			line-height: 42px;
+			float: left;
+			padding-left: 15px;
+			padding-right: 10px;
+			list-style: none;
+			border-bottom: 1px grey solid;
+			border-top: 1px grey solid;
+		}
+		a:hover{
+			color: grey;
+		}
+		.menu{
+			margin: 0;
+			text-align: center;
+		}
+		ul{
+			display: inline-block;
+		}
+		a{
+			text-decoration: none;
+		}
+		.web{
+			background-color: #e0e0d1;
+			padding-top: 50px;
+		}
+		h1{
+			text-align: center;
+			font-size: 65px;
+			color: #009999;
+		}
+		.demuc1{
+			text-align: center;
+		}
+		.demuc2{
+			text-align: center;
+		}
+		h3{
+			color: #009999;
+		}
+		.text{
+			width: 400px;
+		}
+		.kho1{
+			display: inline-block;
+			margin: 20px;
+		}
+		.kho2{
+			display: inline-block;
+			margin: 30px;
+		}
+		.kho3{
+			display: inline-block;
+		}
+		.kho4{
+			display: inline-block;
+			margin: 20px;
+		}
+		.kho5{
+			display: inline-block;
+			margin: 20px;
+		}
+		.kho6{
+			display: inline-block;
+		}
+		.img6{
+			width: 500px;
+		}
+		.textinL{
+			width: 500px;
+		}
+		.textL{
+			display: inline-block;
+		}
+		.textR{
+			display: inline-block;
+			margin-left: 500px;
+		}
+		i{
+			margin: 10px;
+		}
+		.form{
+			background-color: #009999;
+		}
+		.textform{
+			color: white;
+			margin-left: 20px;
+		}
+		.img6{
+			width: 500px;
+			height: 230px;
+		}
+		.me{
+			margin-left: 20px;
+		}
+		input{
+			margin-left: 20px;
+		}
+		textarea{
+			margin-left: 20px;
+		}
+		button{
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+		@media (max-width: 960px) {
+			.all{
+				width: 100%;
+			}
+		}
+		@media (max-width: 700px) {
+			.all{
+				width: 70%;
+			}
+		}
+		@media (max-width: 480px) {
+			.all{
+				width: 50%;
+			}
+		}

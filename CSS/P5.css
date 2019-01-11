@@ -1,0 +1,173 @@
+.menu{
+			background-color: #AA0000;
+		}
+		li{
+			list-style: none;
+			display: inline-block;
+			height: 30px;
+			line-height: 30px;
+
+		}
+		.menu li{
+			border-right: 1px white solid;
+		}
+		li:hover{
+			background-color: #990000;
+		}
+		ul{
+			margin:0 auto;
+			width: 80%;
+			height: 30px;
+			line-height: 10px;
+			background-color: #AA0000;
+		}
+		a{
+			text-decoration: none;
+			color: white;
+			line-height: 10px;
+			font-size: 20px;
+			padding: 10px;
+		}
+		.top{
+			background-color: #DD0000;
+		}
+		h1{
+			color: white;
+			padding-left: 180px;
+		}
+		.adv{
+			background-color: #ebebe0;
+		}
+		.imgadv{
+			padding-left: 400px;
+		}
+		.note{
+			color: red;
+		}
+		hr{
+			border:1px red solid;
+			width: 30px;
+			float: left;
+		}
+		.body1{
+			display: inline-block;
+			width: 15%;
+			padding-left: 400px;
+		}
+		.plane{
+			width: 500px;
+			height: 300px;
+		}
+		.spaceB{
+			border: 1px grey solid;
+			width: 900px;
+			float: none;
+			padding-left: 00px;
+
+		}
+		.spaceS{
+			border-bottom: 1px grey solid;
+			width: 50px;
+		}
+		.body2{
+			display: inline-block;
+			width: 250px;
+			border-right: 1px grey solid;
+			height: 400px;
+			float: left;
+		}
+		.body3{
+			float: left;
+			padding-left: 400px;
+		}
+		.body2in{
+			border-bottom: 1px grey solid;
+		}
+		.body23rd{
+			width: 200px;
+			display: inline-block;
+		}
+		.BD31{
+			display: inline-block;
+		}
+		.BD32{
+			display: inline-block;
+		}
+		.body3in1{
+			border-bottom: 1px grey solid;
+			width: 200px;
+		}
+		.body3in2{
+			border-bottom: 1px grey solid;
+			width: 200px;
+		}
+		.textinbd4{
+			display: inline-block;
+		}
+		.body41{
+			display: inline-block;
+		}
+		.body42{
+			display: inline-block;
+		}
+		.textinbd5{
+			display: inline-block;
+			width: 200px;
+			float: left;
+		}
+		.imginbd6{
+			width: 300px;
+
+		}
+		.textinbd6{
+			display: inline-block;
+			width: 400px;
+		}
+		.textinbd7{
+			width: 350px;
+		}
+		.bodyR1{
+			background-color: #ebebe0;
+			display: inline-block;
+		}
+		.textinbdR2{
+			background-color: #ebebe0;
+		}
+		.num{
+			color: red;
+			font-size: 50px;
+			float: right;
+		}
+		.tec{
+			
+		}
+		.tieude1{
+			padding-left: 400px;
+		}
+		.body2all{
+			padding-left: 400px;
+		}
+		.tieudenghexem{
+			padding-left: 400px;
+		}
+		.body4{
+			padding-left: 400px;
+		}
+		.tieude3{
+			padding-left: 400px;
+		}
+		.body5{
+			padding-left: 400px;
+		}
+		.body71{
+			display: inline-block;
+		}
+		.body72{
+			display: inline-block;
+		}
+		.body7{
+			padding-left: 400px;
+		}
+		.bodyL{
+			display: inline-block;
+		}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 3</title>
+	<meta charset="utf-8">
+	<!-- Cách 3 -->
+	<link rel="stylesheet" type="text/css" href="CSS/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<!-- Cách 2 -->
+	<!-- <style type="text/css">
+	/* CLass */
+		.zent{
+			color: green;
+		}
+	/* ID */
+		#zent{
+			color: yellow;
+		}
+		#parent>.text{
+			color: orange;
+		}
+		#parent li:nth-child(2){
+			color: red
+		}
+	</style> -->
+	<style type="text/css">
+		/* *{
+			color: blue;
+		} */
+
+		/* body{
+			background-image: url("The Last of Us™ Remastered_20170916135843.jpg");
+		} */
+		h1 ~ p {
+			color: grey;
+		}
+		h1:hover{
+			color:black;
+		}
+		/* h1{
+			background: pink;
+		} */
+		/* 	h1{
+			background-image: url("The Last of Us™ Remastered_20170916135843.jpg");
+			background-repeat: repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		} */
+		/* h1{
+			font-family: "Times New Roman", sans-serif;
+			font-style: normal;
+			font-variant: small-caps;
+			font-weight: bold;
+			font-size: 60px;	
+		
+		} */
+		.box{
+			width: 300px;
+			height: 300px;
+			/* display: inline-block; */
+			float: right;
+		}
+		.green{
+			background: green;
+			float: left;
+		}
+		.red{
+			background: red;
+			float: both;
+		}
+		.pink{
+			background: pink;
+			float: right;
+		}
+		#menu{
+			background: green;
+			height: 42px;
+		}
+		.item{
+			line-height: 42px;
+			list-style: none;
+			float: left;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.item a {
+			color: #fff;
+			text-decoration: none;
+		}
+		.item:hover{
+			background: blue;
+		}
+	</style>
+</head>
+<body>
+	<!-- Cách 1 -->
+	<!-- <h1 id="zent" class="zent">Hello Dương</h1> -->
+	<div id="parent">
+		<a href="linkneverdie.com"><i class="fab fa-facebook"></i>Game</a>
+		<h1 class="text">Hello Dương</h1>
+		<p frontend="23">Hello</p>
+		<p class="text">Hello Dương</p>
+		<ul >
+			<li>Hà Nội</li>
+			<li>HCM</li>
+		</ul>
+		<p class="text">Lorem ipsum dolor sit.</p>
+		<div>
+			<p class="text">Lorem ipsum dolor sit amet.</p>
+		</div>
+		<div class="box green"></div>
+		<div class="box red"></div>
+		<div class="box pink"></div>
+	</div>
+	<div style="clear: right;">AAA</div>
+	<ul id="menu">
+		<li class="item"><a href="#">Home</a></li>
+		<li class="item"><a href="#">Home</a></li>
+		<li class="item"><a href="#">Home</a></li>
+		<li class="item"><a href="#">Home</a></li>
+		<li class="item"><a href="#">Home</a></li>
+	</ul>
+</body>
+</html>

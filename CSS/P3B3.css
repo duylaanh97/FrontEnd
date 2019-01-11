@@ -1,0 +1,23 @@
+div{
+	float: left;
+	padding: 10px;
+}
+img.v{
+	display: inline-block;
+	position: relative;
+	top:25px;
+}
+img {
+	float: left;
+  
+}
+h3 {
+   position: relative;
+   left:20px;
+   padding: 7px 10px;
+   
+}
+h3:hover{
+	color: blue;
+	text-decoration: underline;
+}
