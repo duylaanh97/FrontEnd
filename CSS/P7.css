@@ -1,0 +1,179 @@
+.M{
+	color: orange;
+}
+.home{
+	color: orange;
+}
+.black{
+	color: black;
+}
+li{
+	list-style: none;
+	display: inline-block;
+	margin: 10px;
+}
+a:hover{
+	color: #e0e0d1;
+}
+a{
+	text-decoration: none;
+}
+.menutop{
+	display: inline-block;
+	margin-left: 900px;
+}
+.trai{
+	display: inline-block;
+	font-size: 30px;
+	margin-left: 20px;
+}
+.vongtron{
+	text-align: center;
+	font-size: 10px;
+}
+.text1{
+	text-align: center;
+	margin: 50px;
+}
+.item1{
+	text-align: center;
+	margin: 10px;
+}
+.icon{
+	text-align: center;
+	display: inline-block;
+	margin: 20px;
+	color: orange;
+}
+.textinicon{
+	color: black;
+}
+.text2{
+	text-align: center;
+	width: 400px;
+	margin-left: 550px;
+	margin-bottom: 50px;
+}
+.img2{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.icon2{
+	display: inline-block;
+	margin: 10px;
+	text-align: center;
+	margin-top: 100px;
+	color: orange;
+}
+.item2{
+	margin-left: 150px;
+}
+.textinit2{
+	display: inline-block;
+	width: 300px;
+}
+.part{
+	display: inline-block;
+	width: 400px;
+}
+.orange{
+	text-align: center;
+	background-color: #ff5c33;
+	height: 150px;
+	margin: 50px;
+}
+.textinorange{
+	padding-top: 10px;
+	color: white;
+}
+.text3{
+	text-align: center;
+	margin: 50px;
+}
+.item3{
+	text-align: center;
+	margin: 50px;
+}
+.pinitem3{
+	width: 200px;
+}
+.imgman{
+	display: inline-block;
+	margin: 50px;
+}
+.facebook{
+	color: black;
+	font-size: 20px;
+}
+.left{
+	display: inline-block;
+	color: white;
+	margin: 20px;
+}
+.middle{
+	display: inline-block;
+	margin: 20px;
+	color: white;
+	width: 250px;
+	height: 300px;
+}
+.right{
+	display: inline-block;
+	color: white;
+	margin: 20px;
+	width: 500px;
+
+}
+.chucuoi{
+	display: inline-block;
+}
+.bot{
+	background-color: #3d3d29;
+}
+.textinbot{
+	margin-left: 250px;
+}
+.end{
+	background-color: black;
+}
+.textinend{
+	color: white;
+}
+.menubot{
+	color: white;
+}
+.menuinend{
+	display: inline-block;
+	margin-left: 800px;
+}
+.credit{
+	display: inline-block;
+	margin-left: 20px;
+}
+.disapear{
+	display: none;
+	color: black;
+}
+@media (max-width: 960px) {
+	.all{
+		width: 24%;
+	}
+}
+@media (max-width: 750px) {
+	.all{
+		width: 48%;
+	}
+}
+@media (max-width: 480px) {
+	.all{
+		width: 100%;
+	}
+}
+@media (max-width: 607px) {
+	.disapear{
+		display: none;
+		display: block;
+		color: black;
+	}
+
+}
