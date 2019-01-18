@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 7</title>
+	<style type="text/css">
+		.red{
+			color: red;
+		}
+		.green{
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<!-- <h1 class="name">Hello</h1>
+	<h1 class="name">Hello 1</h1> -->
+	<h1 id="name" class="red name " name="Duy" >Duy Duy</h1>
+	
+	<input type="text" id="input">
+	<button id="ClickMe">Click Me</button>
+	<table>
+		<tbody id="content">
+			
+		</tbody>
+	</table>
+
+	<div id="content"></div>
+
+	<script type="text/javascript">
+		var i = 1;
+		/*document.getElementById('name').style.color="red"*/
+		/*document.getElementsByClassName('name')[0].style.color="blue"*/
+		document.getElementById('ClickMe').addEventListener('click', function() {
+			/*alert('hello')*/
+			/*document.getElementsByClassName('name')[0].style.color="blue"*/
+			// document.getElementsByClassName('name')[1].innerHTML = "Ahihi"
+			/*document.getElementById('name').setAttribute('name', 'green')*/
+			var input = document.getElementById('input')
+			var content = document.getElementById('content')
+			/*content.innerHTML += input.value + '<br>'*/
+			content.innerHTML += `<tr id="`+ i +`">
+				<td>` + input.value + `</td>
+				<td><button onclick = "funDelete(`+ i +`)">Delete</button></td>
+			</tr>`
+			input.value =''
+			i++;
+		})
+
+		function funDelete(id){
+			document.getElementById(id).remove()
+		}
+	</script>
+</body>
+</html>
