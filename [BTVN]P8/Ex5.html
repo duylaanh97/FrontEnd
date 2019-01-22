@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 5</title>
+</head>
+<body>
+	<p>Tổng 10 số chẵn đầu tiên là: </p>
+	<p id="result"></p>
+	<script type="text/javascript">
+		var n = 0;
+		for (var i = 0; i <20; i++) {
+			if (i %2 == 0) {
+				n = n+i;
+			}
+		}
+		document.getElementById('result').innerHTML=n;
+	</script>
+</body>
+</html>

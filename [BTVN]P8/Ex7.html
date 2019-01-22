@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 7</title>
+</head>
+<body>
+	<input id="number1" type="text" name="">
+	<input id="number2" type="text" name="">
+	<input id="number3" type="text" name="">
+	<button onclick="caculate()">Result</button>
+	<p>Result Is</p>
+	<p id="result">
+		
+	</p>
+	<script type="text/javascript">
+		function caculate(){
+			var K=document.getElementById("number1").value;
+			var N=document.getElementById("number2").value;
+			var M=document.getElementById("number3").value;
+			var res=0;
+			for (var i =N;i<=M;i++) {
+				if (i%K==0) {
+					res=res+i;
+				}
+			}
+			document.getElementById("result").innerHTML=res;
+		}
+	</script>
+</body>
+</html>

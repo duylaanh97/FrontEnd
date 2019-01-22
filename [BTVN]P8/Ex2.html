@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 2</title>
+	<style type="text/css">
+		table{
+			background-color: #80bfff;
+		}
+		.button{
+			text-align: center;
+			margin: 50px;
+		}
+	</style>
+</head>
+<body>
+	<table border="1px" align="center">
+		<tr>
+			<td><input type="checkbox" class="check"></td>
+			<td>Lorem ipsum dolor.</td>
+		</tr>	
+		<tr>
+			<td><input type="checkbox" class="check"></td>
+			<td>Lorem ipsum dolor.</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" class="check"></td>
+			<td>Lorem ipsum dolor sit amet.</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" class="check"></td>
+			<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste.</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" class="check"></td>
+			<td>Lorem ipsum dolor sit amet, consectetur.</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" class="check"></td>
+			<td>Lorem ipsum dolor sit.</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" class="check"></td>
+			<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" class="check"></td>
+			<td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+		</tr>
+	</table>
+	<div class="button">
+	<button onclick="check()">Check All</button><button onclick="uncheck()">Uncheck All</button>
+	</div>
+	<script>
+		function check(){
+			var check = document.getElementsByClassName("check");
+			for (var i = 0; i < check.length; i++){
+				check[i].checked = true;
+			}
+		}
+		function uncheck(){
+			var check = document.getElementsByClassName("check");
+			for (var i = 0; i < check.length; i++){
+				check[i].checked = false;
+			}
+		}
+	</script>
+</body>
+</html>

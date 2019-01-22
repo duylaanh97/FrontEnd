@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		p{
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<input type="checkbox" class="check">
+		<p>blabla</p>
+	</div>
+	<div>
+		<input type="checkbox" class="check">
+		<p>blabla</p>
+	</div>
+	<div>
+		<input type="checkbox" class="check">
+		<p>blabla</p>
+	</div>
+	<div>
+		<input type="checkbox" class="check">
+		<p>blabla</p>
+	</div>
+	<div>
+		<input type="checkbox" class="check">
+		<p>blabla</p>
+	</div>
+	<div>
+		<input type="checkbox" class="check">
+		<p>blabla</p>
+	</div>
+	<button onclick="check()">Check All</button><button onclick="uncheck()">Uncheck All</button>
+	<script>
+		function check(){
+			var check = document.getElementsByClassName("check");
+			for (var i = 0; i< check.length; i++){
+				check[i].checked = "true";
+			}
+		}
+		function uncheck(){
+			var check = document.getElementsByClassName("check");
+			for (var i = 0; i< check.length; i--){
+				check[i].checked = "false";
+			}
+		}
+	</script>
+</body>
+</html>

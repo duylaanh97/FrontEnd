@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 6</title>
+</head>
+<body>
+<input type="text" name="" id="number">
+<button onclick="caculate()">Result</button>
+<p>Result is</p>
+<p id="result"></p>
+<script type="text/javascript">
+	function caculate() {
+		var n=document.getElementById("number").value;
+		var res=0;
+		for (var i = 1;i<=n;i++) {
+			res=res+1/i;
+		}
+		document.getElementById("result").innerHTML=res;
+	}
+</script>
+</body>
+</html>

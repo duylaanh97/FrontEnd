@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 1</title>
+	<style type="text/css">
+		.text{
+			font: Arial;
+			padding: 50px 0 0 50px;
+		}
+		button{
+			background-color: #666666;
+			color: #FFFFFF;
+		}
+	</style>
+</head>
+<body>
+	<div class="text">
+		<p id="change">Cỡ Chữ</p>
+	</div>
+	<div>
+		<button id="Lớn">+</button>
+		<button id="Nhỏ">-</button>
+		<button id="reset">Mặc Định</button>
+	</div>
+	<script type="text/javascript">
+		document.getElementById('Lớn').addEventListener('click', function(){
+			document.getElementById('change').style.fontSize = "xx-large";
+		})
+		document.getElementById('Nhỏ').addEventListener('click', function(){
+			document.getElementById('change').style.fontSize = "xx-small";
+		})
+		document.getElementById('reset').addEventListener('click', function(){
+			document.getElementById('change').style.fontSize = "medium";
+		})
+	</script>
+</body>
+</html>
