@@ -3,8 +3,41 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Bài 3</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/P8Ex3.css">
 </head>
 <body>
-	
+	<div class="tab">
+	  <button class="tablinks" onclick="Tab(event, 'Tab1')">Tab1</button>
+	  <button class="tablinks" onclick="Tab(event, 'Tab2')">Tab2</button>
+	  <button class="tablinks" onclick="Tab(event, 'Tab3')">Tab3</button>
+	</div>
+
+	<div id="Tab1" class="tabcontent">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam praesentium minus deserunt repellat blanditiis, totam, quasi est in atque dolorem similique assumenda rem, voluptas possimus, aut? Deserunt ex, id cum.</p>
+	</div>
+
+	<div id="Tab2" class="tabcontent">
+	  <p>Lorem ipsum dolor sit amet, consectetur.</p> 
+	</div>
+
+	<div id="Tab3" class="tabcontent">
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod.</p>
+	</div>
+
+	<script>
+		function Tab(evt, cityName) {
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+		    tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+		    tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(cityName).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+	</script>
 </body>
 </html>

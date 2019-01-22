@@ -8,11 +8,14 @@
 	<input type="text" name="" id="number">
 	<button onclick="caculate()">Click</button>
 	<p id="result"></p>
-<script type="text/javascript">
+
+	<script type="text/javascript">
 	function giaiThua(a) {
 		var res1=1;
 		for (var i = 1; i <= a; i++) {
 			res1=res1*i;
+			document.write(i);
+			document.write(res1);
 		}
 		return res1;
 	}
@@ -25,6 +28,6 @@
 		}
 		document.getElementById("result").innerHTML=res;
 	}
-</script>
+	</script>
 </body>
 </html>

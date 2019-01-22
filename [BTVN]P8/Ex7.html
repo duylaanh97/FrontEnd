@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Bài 7</title>
+	<link rel="stylesheet" href="">
 </head>
 <body>
-	<input id="number1" type="text" name="">
-	<input id="number2" type="text" name="">
-	<input id="number3" type="text" name="">
-	<button onclick="caculate()">Result</button>
-	<p>Result Is</p>
-	<p id="result">
-		
-	</p>
+	<span>a = </span> <input type="text" id="number1" name="">
+	<span>b = </span> <input type="text" id="number2" name="">
+	<span>c = </span> <input type="text" id="number3" name="">
+	<button type="submit" onclick="caculate()">result</button>
+	<p id="result"></p>
 	<script type="text/javascript">
 		function caculate(){
 			var K=document.getElementById("number1").value;
 			var N=document.getElementById("number2").value;
 			var M=document.getElementById("number3").value;
 			var res=0;
-			for (var i =N;i<=M;i++) {
-				if (i%K==0) {
+			k=parseInt(K);m=parseInt(M);n=parseInt(N);
+			for (var i=n;i<=m;i++) {
+				if (i%k==0) {
 					res=res+i;
 				}
 			}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 9</title>
+</head>
+<body>
+	<input type="text" name="" id="number">
+	<button onclick="caculate()">Click</button>
+	<p id="result"></p>
+	<script type="text/javascript">
+		function caculate() {
+		var n = document.getElementById("number").value;
+		var res=0;
+		var i = 1;
+		do{
+			res=res+i;
+			i++;
+		}
+		while (i<=n)
+		document.getElementById("result").innerHTML=res;
+	}
+	</script>
+</body>
+</html>
