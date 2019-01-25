@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<input type="text" id="text" placeholder="input content" name="">
+	<button id="add">Add</button>
+	<button id="update">Update</button>
+	<table>
+		<tbody id="content">
+
+		</tbody>
+	</table>
+	<button onclick="togglechecked(true)">Check All</button>
+	<button onclick="togglechecked(false)">Uncheck All</button>
+	<script type="text/javascript">
+		
+	</script>
+	<script type="text/javascript">
+		document.getElementById('add').addEventListener('click', function(){
+			var input = document.getElementById('text');
+			if (input.value == '') {
+				alert('Vui lòng nhập nội dung');
+			}
+			var tr = `<tr>
+				<td>
+					<input type="checkbox" name="">
+				</td>
+				<td>
+					`+ input.value +`
+				</td>
+				<td>
+					<button onclick="funEdit('`+ input.value +`')">Edit</button>
+				</td>
+				<td>
+					<button onclick="funDel(this)">Delete</button>
+				</td>
+			</tr>`
+			var content = document.getElementById('content')
+			content.innerHTML += tr
+			input.value = ''
+		})
+		function funEdit(text){
+			var input = document.getElementById('text');
+			input.value = text
+
+			document.getElementById('add').setAttribute('id','update')
+			document.getElementById('update').innerHTML="Update"
+		}
+		function funDel(a){
+			a.parentNode.parentNode.remove()
+		}
+
+		function togglechecked(status){
+			var checkboxs = document.getElementsByTagName('input');
+				for (var i = 0; i < checkboxs.length; i++) {
+					checkboxs[i].checked = status
+				}
+			}
+	</script>
+</body>
+</html>

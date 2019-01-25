@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ep 8</title>
+</head>
+<body>
+	<input type="text" id="input">
+	<button id="ClickMe">Add</button>
+	<table>
+		<tbody id="content">
+			
+		</tbody>
+	</table>
+
+	<div id="content"></div>
+	<script type="text/javascript">
+		var i = 1;
+		document.getElementById('ClickMe').addEventListener('click', function() {
+			var input = document.getElementById('input')
+			var content = document.getElementById('content')
+			content.innerHTML += `<tr id="`+ i +`">
+				<td>` + input.value + `</td>
+				<td><button onclick = "funDelete(`+ i +`)">Delete</button></td>
+			</tr>`
+			input.value =''
+			i++;
+		})
+
+		function funDelete(id){
+			document.getElementById(id).remove()
+		}
+	</script>
+</body>
+</html>

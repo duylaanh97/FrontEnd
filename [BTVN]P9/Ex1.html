@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 1</title>
+	<style type="text/css">
+		#main{
+			margin-top: 50px;
+			margin-left: 350px;
+		}
+		.content{
+			width: 800px;
+			height: 600px;
+			position: relative;
+		}
+		#main .content img {
+			width: 800px;
+			height: 600px;
+			margin: 0px auto;
+		}
+		.but1 {
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			width: 50px;
+			height: 100%;
+			background-color: #808080;
+			opacity: 0;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		.but2 {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 50px;
+			height: 100%;
+			background-color: #808080;
+			opacity: 0;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		#main .content:hover .but1, #main .content:hover .but2{
+			opacity: 0.4;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div class="content">
+			<img id="img" src="../images/01.jpg" name="img">
+			<input class="but1" type="button" value="next" name="img" onclick="next()">
+			<input class="but2" type="button" value="back" name="img1" onclick="back()">
+		</div>
+	</div>
+	<script type="text/javascript">
+		var result = 1;
+		function next(){
+			if (result == 4) {
+				result = 1;
+			}
+			result++;
+			document.img.src = "../images/0" + result + ".jpg";
+		}
+
+		function back(){
+			if (result == 1) {
+				result = 4;
+			}
+			result--;
+			document.img.src = "../images/0" + result + ".jpg";
+		}
+		/*setInterval("next()", 4000)*/
+	</script>
+</body>
+</html>
