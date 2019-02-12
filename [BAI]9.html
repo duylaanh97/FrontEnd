@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Buổi 9</title>
+</head>
+<body>
+	<select onchange="myCity(this)">
+		<option value="1">Hà Nội</option>
+		<option value="2">Sài Gòn</option>
+	</select>
+
+	<select id="district">
+		<option value="1">Hai Bài Trưng</option>
+		<option value="2">Quận 6</option>
+	</select>
+
+	<select id="district"></select>
+
+	<script type="text/javascript">
+		function myCity(x){
+			if (x.value == 2) {
+				document.getElementById('district').innerHTML = `<option value="1">Quận 1</option>
+				<option value="2">Quận 2</option> `;
+			}
+			else if (x.value == 1) {
+				document.getElementById('district').innerHTML = `<option value="1">Hai Bà Trưng</option>
+				<option value="2">Quận 6</option>`;
+			}
+		}
+	</script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQ</title>
+	<link rel="stylesheet" href="JS/animate.min.css">
+	<style type="text/css">
+		#content{
+			width: 500px;
+			height: 800px;
+			background-color: blue;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<!-- <h1 id="hello">Duy</h1> -->
+	<!-- <div id="div">
+		<ul>
+			<li class="item">
+				<span>2</span>
+				<span>3</span>
+			</li>
+			<li>
+				<b>Duy</b>
+			</li>
+		</ul>
+	<h1>aaa</h1>
+	<p>bbbb</p>
+	</div>
+	
+	
+	<button onclick="clickMe()">Click</button> -->
+	<div class="wow bounce">
+		Duy
+	</div>
+
+	<script type="text/javascript" src="JS/jquery.min.js"></script>
+	<script type="text/javascript" src="JS/wow.min.js"></script>
+	<script type="text/javascript" src="JS/main.js"></script>
+	<!-- <script type="text/javascript">
+		/*$('#hello').css({'color':'blue' , 'background':'Yellow'})*/
+		/*$('.item').parents('body>#div').css('background','blue')*/
+	
+		/*function clickMe(){
+			$('#content').slideToggle(2000, function(){
+				alert('done')
+			})
+		}*/
+	</script> -->
+</body>
+</html>

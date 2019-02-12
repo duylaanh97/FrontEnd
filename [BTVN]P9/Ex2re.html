@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 2</title>
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<div class="main">
+	<form name="form" method="POST" onsubmit="return checkform();">
+		<table width="600px" height=500px"  align="center">
+			<tr style="height: 2px">
+				<td>Họ và Tên</td>
+				<td><input size="70px" type="text" name="name" placeholder="Vui lòng nhập Họ và Tên..."></td>
+			</tr>
+			<tr style="height: 2px">
+				<td>Giới Tính</td>
+				<td>
+					<input type="radio" name="gender" name="gender"> Male
+					<input type="radio" name="gender" name="gender"> Female
+				</td>
+			</tr>
+			<tr style="height: 2px">
+				<td>Địa Chỉ Email</td>
+				<td><input size="70px" type="email" name="email" placeholder="Vui lòng nhập địa chỉ email..."></td>
+			</tr>
+			<tr style="height: 2px">
+				<td>Số Điện Thoại</td>
+				<td><input  size="200px" type="number" name="phone" placeholder="Nhập Số Điện Thoại"></td>
+			</tr>
+			<tr style="height: 2px">
+				<td>Mật Khẩu</td>
+				<td><input  size="70px" type="password" name="password" placeholder="Nhập Mật Khẩu"></td>
+			</tr>
+			<tr style="height: 2px">
+				<td>Xác Nhận Mật Khẩu</td>
+				<td><input  size="70px" type="password" name="xnpass" placeholder="Xác Nhận Mật Khẩu"></td>
+			</tr>
+			<tr>
+				<td><button onclick="return signin()">Đăng Kí</button><button id="reset" onclick="reset()">reset</button></td>
+			</tr>
+		</table>
+	</form>
+	</div>
+	<script type="text/javascript">
+		function signin(){
+			if (document.form.name.value == "" ) {
+				alert("Vui Lòng Nhập Họ Tên");
+			}
+			if (document.form.gender.value == "") {
+				alert("Vui lòng chọn giới tính");
+			}
+			if (document.form.email.value == "") {
+				alert("Vui lòng nhập Email");
+			}
+			if (document.form.phone.value == "") {
+				alert("Vui lòng nhập số điện thoại");
+			}
+			if (document.form.password.value == "") {
+				alert("Vui lòng nhập mật khẩu");
+			}
+			if (document.form.xnpass.value == "") {
+				alert("Vui lòng xác nhận mật khẩu");
+			}
+			return alert("đăng kí thành công");
+			
+		}
+	</script>
+</body>
+</html>

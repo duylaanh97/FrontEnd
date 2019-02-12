@@ -12,30 +12,30 @@
 		<table width="600px" height=500px"  align="center">
 			<tr style="height: 2px">
 				<td>Họ và Tên</td>
-				<td><input size="70px" type="text" name="name" placeholder="Vui lòng nhập Họ và Tên..."></td>
+				<td><input id="name" size="70px" type="text" name="name" placeholder="Vui lòng nhập Họ và Tên..."></td>
 			</tr>
 			<tr style="height: 2px">
 				<td>Giới Tính</td>
 				<td>
-					<input type="radio" name="gender" name="gender"> Male
-					<input type="radio" name="gender" name="gender"> Female
+					<input id="gender" type="radio" name="gender" name="gender"> Male
+					<input id="gender" type="radio" name="gender" name="gender"> Female
 				</td>
 			</tr>
 			<tr style="height: 2px">
 				<td>Địa Chỉ Email</td>
-				<td><input size="70px" type="email" name="email" placeholder="Vui lòng nhập địa chỉ email..."></td>
+				<td><input id="email" size="70px" type="email" name="email" placeholder="Vui lòng nhập địa chỉ email..."></td>
 			</tr>
 			<tr style="height: 2px">
 				<td>Số Điện Thoại</td>
-				<td><input  size="200px" type="number" name="phone" placeholder="Nhập Số Điện Thoại"></td>
+				<td><input id="phone" size="200px" type="number" name="phone" placeholder="Nhập Số Điện Thoại"></td>
 			</tr>
 			<tr style="height: 2px">
 				<td>Mật Khẩu</td>
-				<td><input  size="70px" type="password" name="password" placeholder="Nhập Mật Khẩu"></td>
+				<td><input id="password" size="70px" type="password" name="password" placeholder="Nhập Mật Khẩu"></td>
 			</tr>
 			<tr style="height: 2px">
 				<td>Xác Nhận Mật Khẩu</td>
-				<td><input  size="70px" type="password" name="xnpass" placeholder="Xác Nhận Mật Khẩu"></td>
+				<td><input id="xnpass" size="70px" type="password" name="xnpass" placeholder="Xác Nhận Mật Khẩu"></td>
 			</tr>
 			<tr>
 				<td><button onclick="return signin()">Đăng Kí</button><button id="reset" onclick="reset()">reset</button></td>
@@ -44,28 +44,70 @@
 	</form>
 	</div>
 	<script type="text/javascript">
-		function signin(){
-			if (document.form.name.value == "") {
-				alert("Vui Lòng Nhập Họ Tên");
+		var inputs = document.forms['form'].getElementsByTagName('input');
+		var run_onchange = false;
+		function valid(){
+			var errors = false;
+			var reg_mail = /^[A-Za-z0-9]+([_\.\-]?[A-Za-z0-9])*@[A-Za-z0-9]+([\.\-]?[A-Za-z0-9]+)*(\.[A-Za-z]+)+$/;
+			for (var i = 0; i< inputs.length; i++) {
+				var value = inputs[i].value;
+				var id = inputs[i].getAttribute('id');
+				var span = document.createElement('span');
+				var p = inputs[i].parentNode;
+				if (p.lastChild.nodeName == 'SPAN') {
+					p.removeChild(p.lastChild);
+				}
+				if (value == '') {
+					span.innerHTML = 'Vui lòng điền thông tin';
+				}else{
+					if (id == 'email') {
+						if (reg_mail.test(value) == false) {
+							span.innerHTML= "Email không hợp lệ";
+						}
+						var email = value;
+					}
+					if (id == 'password') {
+						if (value.length <6) {
+							span.innerHTML = 'Password phải có 6 ký tự';
+						}
+						var pass = value;
+					}
+					if (id == 'xnpass' && value != pass) {
+						span.innerHTML = 'Password chưa nhập lại đúng';
+					}
+					if (id == 'phone' && isNaN(value) == true) {
+						span.innerHTML = 'Số Điện Thoại phải là kiểu số';
+					}
+				}
+				if (span.innerHTML != '') {
+					inputs[i].parentNode.appendChild(span);
+					errors =true;
+					run_onchange = true;
+					inputs[i].style.border = '1px solid #c6807b';
+					inputs[i].style.background = '#fffcf9';	
+				}
 			}
-			if (document.form.gender.value == "") {
-				alert("Vui lòng chọn giới tính");
+			if (errors == false) {
+				alert('Đăng Kí Thành Công');
+				return !errors;
+				}
 			}
-			if (document.form.email.value == "") {
-				alert("Vui lòng nhập Email");
-			}
-			if (document.form.phone.value == "") {
-				alert("Vui lòng nhập số điện thoại");
-			}
-			if (document.form.password.value == "") {
-				alert("Vui lòng nhập mật khẩu");
-			}
-			if (document.form.xnpass.value == "") {
-				alert("Vui lòng xác nhận mật khẩu");
-			}
-			return alert("đăng kí thành công");
 			
-		}
+			var form = document.getElementById('submit');
+			form.onclick = function(){
+				return valid();
+			}
+			for (var i = 0; i< inputs.length; i++) {
+				var id = inputs[i].getAttribute('id');
+				inputs[i].onchange = function(){
+					if (run_onchange == true) {
+						this.style.border = '1px solid #999';
+						this.style.background = '#fff';
+						valid();
+					}
+				}
+			}
+		
 	</script>
 </body>
 </html>
