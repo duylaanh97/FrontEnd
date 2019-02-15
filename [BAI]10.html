@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.error{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- <h3 align="center">Counter up</h3>
+	<span class="counter" style="margin-left:20%; ">1,234,567.00</span>
+	<span class="counter" style="margin-left:20%; ">1.99</span>
+	<span class="counter" style="margin-left:20%; ">12345</span>
+	<script type="text/javascript" src="JS/jquery-2.2.1.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+	<script type="text/javascript" src="JS/jquery.counterup.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.counter').counterUp({
+				delay: 10,
+				time: 1000
+			});
+		});
+	</script> -->
+
+	<form action="" method="post" id="login">
+		<div class="input">
+			<input type="email" name="email" placeholder="email"><br>
+			<input type="password" name="password" placeholder="password"><br>
+			<input type="file" name="images"><br>
+			<button type="submit">Click</button>
+		</div>
+	</form>
+
+	<script type="text/javascript" src="JS/jquery.min.js"></script>
+	<script type="text/javascript" src="JS/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/additional-methods.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/localization/messages_vi.min.js"></script>
+	<script type="text/javascript">
+		$.validator.addMethod('filesize', function(value,element,param){
+			return this.optinal(element) || (element.files[0])
+		}
+		$('#login').validate({
+			rules:{
+				email:{
+					required:true,
+					email: true,
+				},
+				password: {
+					required: true,
+					minlength: 6,
+				},
+				images:{
+					required: true,
+					extension: "jpg|png",
+				}
+			},
+
+			 messages: {
+			 	email:{
+			 		 required: "Vui lòng nhập địa chỉ",
+                    extension: "Nhập đúng định dạng",
+			 	},
+			 	password:{
+			 		required: "Vui lòng nhập địa chỉ",
+                    extension: "Nhập đúng định dạng",
+			 	},
+                images: {
+                    required: "Vui lòng nhập tệp",
+                    extension: "Nhập đúng định dạng",
+                }
+            }
+
+		})
+	</script>
+</body>
+</html>
