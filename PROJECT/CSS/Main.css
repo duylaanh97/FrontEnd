@@ -120,3 +120,28 @@ select {
 .color-container-4 {
   transition: height 500ms ease-out;
 }
+  .apart2:hover{
+    font-color: #ffa31a;
+  }
+  header {display:block; font-size:1.2em;margin-bottom:100px;}
+  header a, header span {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-right: 10px;
+    border: 2px solid #000;
+    background: #DDD;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    height: 20px;
+  }
+  header span {background:white;}
+  a {color:#7fa9fe;}
+
+.quynhquynh:hover{
+  background-color: orange !important;
+}
+
+  .quynhquynh:hover .ahhihi{
+    color:black !important;
+  }
